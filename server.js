@@ -9,7 +9,7 @@ var app = express();
 
 console.log(__dirname);
 
-app.use('/api/friends', apiRoutes);
-app.use('*', htmlRoutes);
+app.use(apiRoutes);
+app.use(htmlRoutes);
 
 app.listen(port, () => console.log('App listening on port: ' + port));

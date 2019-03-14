@@ -1,11 +1,11 @@
 var express = require('express');
 var router = express.Router();
 
-router.get('*', function(req, res) {
+router.get('/api/friends', function(req, res) {
     res.send('friends api get request');
 });
 
-router.post('*', function(req, res) {
+router.post('/api/friends', function(req, res) {
     res.send('friends api post request');
 });
 
